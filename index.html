@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<meta name="theme-color" content="#e8579f">
+<meta name="theme-color" content="#a9dcf5">
 <meta name="description" content="Reef Rush: a match-3 puzzle game with sea creatures, 15 reef levels, specials and boosters. Installable and playable offline.">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,7 +22,7 @@
    PICTURE: the live 8x8 board of hand-drawn sea creatures, edge to edge on a phone
    COLOUR and TYPE: deep sea blues, sandy gold for buttons, coral for the main action; Fredoka throughout
    LAYOUT: one portrait column: HUD, score bar, board, tools; level map is a winding reef path */
-:root{color-scheme:dark;--sea1:#f27ab4;--sea2:#e8579f;--sea3:#7a1650;--ink:#fff7fb;--muted:#ffe0ef;--sand:#ffd36b;--coral:#ff6f59;--card:#f3fbff;--cardink:#0b2545;--glass:rgba(90,10,60,.42)}
+:root{color-scheme:dark;--sea1:#d6f1fc;--sea2:#a9dcf5;--sea3:#7cc3ec;--ink:#0b2545;--muted:#2a5577;--sand:#ffd36b;--coral:#ff6f59;--card:#f3fbff;--cardink:#0b2545;--glass:rgba(255,255,255,.5)}
 :root[data-theme=light],:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;margin:0}
@@ -76,7 +76,7 @@ h1{font-size:clamp(38px,11vw,52px);line-height:1.05;margin:0;font-weight:700;col
 .goal.done b{color:#7dffb0}
 .goal .ck{display:none;width:18px;height:18px}
 .goal.done .ck{display:block}.goal.done .num{display:none}
-.scorebar{position:relative;height:26px;margin:8px 2px 4px;border-radius:999px;background:rgba(74,8,50,.5);border:1px solid rgba(255,255,255,.18);overflow:visible}
+.scorebar{position:relative;height:26px;margin:8px 2px 4px;border-radius:999px;background:rgba(11,37,69,.28);border:1px solid rgba(255,255,255,.18);overflow:visible}
 .fill{position:absolute;left:2px;top:2px;bottom:2px;width:0;border-radius:999px;background:linear-gradient(90deg,#38e1f2,#7dffb0 60%,var(--sand));transition:width .35s ease}
 .mk{position:absolute;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;fill:rgba(255,255,255,.35);filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))}
 .mk.lit{fill:#ffc53d}
@@ -90,7 +90,7 @@ h1{font-size:clamp(38px,11vw,52px);line-height:1.05;margin:0;font-weight:700;col
 .banner.on{display:block}
 .tools{display:flex;justify-content:center;gap:clamp(8px,3vw,18px);padding-top:8px}
 .tool{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:0;padding:0;font-size:13px;color:var(--muted)}
-.tool .bx{position:relative;width:60px;height:56px;border-radius:18px;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,rgba(255,255,255,.28),rgba(255,255,255,.06) 60%),var(--glass);border:1px solid rgba(255,255,255,.25);box-shadow:0 4px 0 rgba(0,0,0,.25);color:#fff}
+.tool .bx{position:relative;width:60px;height:56px;border-radius:18px;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,rgba(255,255,255,.28),rgba(255,255,255,.06) 60%),var(--glass);border:1px solid rgba(255,255,255,.25);box-shadow:0 4px 0 rgba(0,0,0,.25);color:#0b2545}
 .tool svg{width:28px;height:28px}
 .tool .n{position:absolute;right:-6px;top:-6px;min-width:22px;height:22px;border-radius:11px;background:var(--coral);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center;padding:0 5px;box-shadow:0 2px 4px rgba(0,0,0,.3)}
 .tool.on .bx{background:var(--sand);color:#5a2a08;transform:translateY(2px);box-shadow:0 2px 0 #a65b1c}

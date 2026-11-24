@@ -1,6 +1,6 @@
 /* Reef Rush service worker: makes the game installable and playable offline.
    Bump VERSION whenever you change any file listed in CORE. */
-const VERSION = 'reef-rush-v2';
+const VERSION = 'reef-rush-v3';
 const CORE = [
   '/',
   '/manifest.webmanifest',
